@@ -82,7 +82,22 @@ h1, h2, h3 { line-height: 1.15; }
 h1 { font-size: clamp(2.4rem, 5vw, 4.5rem); margin-top: 0; }
 h2 { font-size: 1.55rem; }
 h3 { margin-top: 2.2rem; }
-p { max-width: 720px; color: var(--muted); }
+p { max-width: 720px; color: var(--muted); text-align: justify; }
+p1 {
+	display: block;
+	margin-top: .4rem;
+	color: var(--muted);
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: .84rem;
+	line-height: 1.5;
+}
+.p1-highlight {
+	font-weight: 800;
+	color: var(--ink);
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 2px;
+}
 .eyebrow { color: var(--accent-dark); font-family: 'Trebuchet MS', sans-serif; font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
 
 section > div {
@@ -186,10 +201,12 @@ section > div p { margin-bottom: 0; }
 	font-weight: 700;
 	text-decoration: none;
 	transition: transform .2s ease, background .2s ease;
+	
 }
 .button:hover { background: var(--accent); transform: translateY(-2px); }
 
-footer { max-width: 920px; margin: 0 auto; padding: 1rem 2rem 2rem; color: var(--muted); font-family: 'Trebuchet MS', sans-serif; }
+footer { max-width: 920px; margin: 0 auto; padding: 1rem 2rem 2rem; color: var(--muted); font-family: 'Trebuchet MS', sans-serif; text-align: center; }
+footer small { display: block; }
 
 @media (max-width: 900px) {
 	.site-header { gap: 1rem; }
